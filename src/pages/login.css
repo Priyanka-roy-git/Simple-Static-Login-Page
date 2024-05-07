@@ -1,0 +1,85 @@
+.form-container {
+  display: flex;
+  height: 100vh; /* Make the container cover the entire viewport height */
+}
+
+.image-section {
+  flex: 2; /* Take up one-third of the container */
+  background-image: 
+  linear-gradient(to right, rgba(22, 21, 21, 0), rgb(255, 255, 255)), /* Right side smudge */
+  linear-gradient(to left, rgba(19, 18, 18, 0), rgb(38, 11, 160)), /* Left side smudge */
+   
+  url('../Assets/Priyanka.gif'); /* Add the URL of your GIF here */
+  background-size: cover;
+  background-position: center;
+}
+.form-section {
+  flex: 2; /* Take up two-thirds of the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  
+  background-image: 
+  url('../Assets/white-hexagon-background_670147-22551.avif'); 
+  background-size: contain;
+  
+  /* border-radius: 10px; */
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  */
+  transition: all 0.2s ease; /* Add smooth transition effect */
+
+  /* Add animation */
+  animation-name: fadeInUp;
+  animation-duration: 4s;
+}
+
+/* Define fadeInUp animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Additional styling for the form */
+.form {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
